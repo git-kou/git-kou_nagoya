@@ -1,0 +1,541 @@
+body {
+    background-color:#66CC99;
+    margin:0;
+    min-width:1200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-left:0;
+}
+
+li {
+    list-style:none;
+}
+
+li a {
+    border:1px solid #66AA99;
+    display:block;
+    padding:10px 40px;
+}
+
+li a {
+    background-color:#00CC66;
+    color:white;
+    font-size:17px;
+}
+
+li a:hover {
+    opacity:0.8;
+}
+
+.first {
+    border-radius: 10px 0 0 10px;
+}
+
+.last {
+    border-radius: 0 10px 10px 0;
+}
+
+img {
+    max-width:100%;
+}
+
+main {
+    background-color:#CCFFCC;
+}
+
+table {
+    border:none;
+}
+
+th {
+   width:100px;
+}
+
+td {
+   width:600px;
+}
+
+th,td {
+    padding:10px;
+}
+
+.wrapper-small,footer {
+    width:900px;
+    margin:0 auto;
+}
+
+.wrapper {
+    width:1100px;
+    margin:0 auto;
+}
+
+.flex {
+    display:flex;
+    justify-content:center;
+}
+
+header {
+    background:url("img_tyubu/nagoya.jpg");
+    background-size:cover;
+    height:200px;
+}
+
+.header-logo {
+    text-align:center;
+}
+
+.header-logo img{
+    width:400px;
+}
+
+.menu {
+    background-color: #66CC99;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.menu p {
+    margin-left:20px;
+    font-size:20px;
+}
+
+.han {
+    margin-right:20px;
+    cursor: pointer;
+}
+
+.han span {
+    width: 40px;
+    height: 4px;
+    background-color: #000;
+    position: relative;
+    transition: 0.1s;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .han span:nth-child(1) {
+    top: 0;
+  }
+  
+  .han span:nth-child(2) {
+    margin: 8px 0;
+  }
+  
+  .han span:nth-child(3) {
+    top: 0;
+  }
+  
+  .han.active {
+    transform: translateX(0);
+  }
+  
+  .han.active span:nth-child(1) {
+    top: 11px;
+    transform: rotate(45deg);
+  }
+  
+  .han.active span:nth-child(2) {
+    opacity: 0;
+  
+  }
+  
+  .han.active span:nth-child(3) {
+    top: -13px;
+    transform: rotate(-45deg);
+  }
+
+
+@media(min-width:501px) {
+    .menu {
+        display:none;
+    }
+}
+
+.kensaku {
+    padding:20px 0;
+    text-align:center;
+}
+
+.kensakuform {
+    width:500px;
+    height:30px;
+}
+
+.btn {
+    width:50px;
+    height:30px;
+    background-color:#009933;
+    color:white;
+}
+
+.inner {
+    padding-top:40px;
+    padding-bottom:30px;
+}
+
+.inner-flex {
+    display:flex;
+}
+
+#item {
+    flex-basis:80%;
+    padding-right:30px;
+    margin-bottom:20px;
+}
+
+.hokubu {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#FF9900;
+    width:600px;
+    height:100px;
+    border-radius:8px;
+    box-shadow: 5px 5px 10px;
+}
+
+.hokubu:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0;
+    transition: 0.5s;
+}
+
+.hokubu-naka th {
+    background-color:#FFFF66;
+}
+
+.hokubu-naka td {
+    background-color:#FFFFCC;
+}
+
+.tyubu {
+    margin-top:100px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#FF0099;
+    width:600px;
+    height:100px;
+    border-radius:8px;
+    box-shadow: 5px 5px 10px;
+}
+
+.tyubu:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0;
+    transition: 0.5s;
+}
+
+.tyubu-naka th{
+    background-color:#FF99FF;
+}
+
+.tyubu-naka td {
+    background-color:#FFCCFF;
+}
+
+.minami {
+    margin-top:100px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#0099FF;
+    width:600px;
+    height:100px;
+    border-radius:8px;
+    box-shadow: 5px 5px 10px;
+}
+
+.minami:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0;
+    transition: 0.5s;
+}
+
+.minami-naka th {
+    background-color:#00FFFF;
+}
+
+.minami-naka td {
+    background-color:#CCFFFF;
+}
+
+.hokubu-naka,
+.tyubu-naka,
+.minami-naka {
+    display:none;
+}
+
+.box {
+    margin-top:100px;
+}
+
+.box h2 {
+    border-left:4px solid brown;
+    padding-left:10px;
+}
+
+.box-flex {
+    display:flex;
+}
+
+.box-flex img {
+    width:400px;
+    height:250px;
+}
+
+.box-flex p {
+    margin-left:20px;
+}
+
+.box table {
+    margin-top:30px;
+}
+
+.tatamu-h {
+    margin-top:40px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#FF9900;
+    width:300px;
+    height:70px;
+    border-radius:8px;
+    box-shadow: 3px 3px 7px;
+}
+
+.tatamu-h:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0;
+    transition: 0.5s;
+}
+
+.tatamu-t {
+    margin-top:40px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#FF0099;
+    width:300px;
+    height:70px;
+    border-radius:8px;
+    box-shadow: 3px 3px 7px;
+}
+
+.tatamu-t:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0;
+    transition: 0.5s;
+}
+
+.tatamu-m {
+    margin-top:40px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:30px;
+    font-family:'Courier New', Courier, monospace;
+    background-color:#0099FF;
+    width:300px;
+    height:70px;
+    border-radius:8px;
+    box-shadow: 3px 3px 7px;
+}
+
+.tatamu-m:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0;
+    transition: 0.5s;
+}
+
+.tizu {
+    background-color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:100px;
+    width:400px;
+}
+
+.tizu img {
+    width:400px;
+}
+
+.tizu h2 {
+    font-size:30px;
+}
+
+.side {
+    flex-basis:20%;
+    border-left:1px solid black;
+    padding-left:30px;
+    margin-bottom:20px;
+}
+
+.hitto-flex {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.side h4 {
+    padding-right:10px;
+}
+
+.scr {
+    height:600px;
+    overflow-y: scroll;
+}
+
+.scr p {
+    border-bottom:1px solid gray;
+    margin-right:10px;
+}
+
+.scr p:last-child {
+    border-bottom:none;
+}
+
+.sankou {
+    padding-bottom:30px;
+    margin:0;
+    word-break: break-all;
+}
+
+footer .list {
+    padding-top:30px;
+}
+
+.footer-logo {
+    margin-top:100px;
+    text-align:center;
+    font-size:80%;
+}
+
+@media(max-width:500px) {
+    body {
+        min-width:initial;
+    }
+
+    .wrapper,
+    .wrapper-small,
+    footer {
+        width:initial;
+    }
+
+    .wrapper {
+        width:95%;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    ul {
+        margin:0;
+    }
+
+    .first,
+    .last {
+        border-radius: 0 0 0 0;
+    }
+
+    .header-logo img {
+        width:80vw;
+    }
+
+    .no {
+        display:none;
+    }
+
+    .kensakuform {
+        width:70%;
+    }
+
+    #item {
+        padding-right:0;
+    }
+
+    .hokubu,
+    .tyubu,
+    .minami {
+        width:100%;
+        height:60px;
+        font-size:6vw;
+        box-shadow: 3px 3px 7px;
+    }
+
+    .tyubu,
+    .minami {
+        margin-top:30px;
+    }
+
+    .tatamu-h,
+    .tatamu-t,
+    .tatamu-m {
+        width:80%;
+        margin:40px auto 0 auto;
+        font-size:5vw;
+        height:50px;
+    }
+
+    .inner {
+        text-align:center;
+    }
+
+    .inner-flex {
+        flex-direction: column;
+    }
+
+    .box-flex {
+        flex-direction: column;
+    }
+
+    .box-flex img {
+        width:100%;
+        height:initial;
+    }
+
+    .box-flex p {
+        margin-left:0;
+    }
+
+    .tizu {
+        padding:10px;
+        margin-top:40px;
+        width:initial;
+    }
+
+    .side {
+        border-left:none;
+        border-top:1px solid black;
+        padding-left:0;
+    }
+
+    .scr {
+        height:200px;
+    }
+
+    footer .list {
+        padding-top:0;
+    }
+
+    .footer-logo {
+        margin-top:30px;
+    }
+}
