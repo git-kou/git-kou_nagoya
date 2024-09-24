@@ -151,6 +151,10 @@ header {
     transform: rotate(-45deg);
   }
 
+  .no {
+    display:none;
+  }
+
 
 @media(min-width:601px) {
     .menu {
@@ -190,23 +194,26 @@ header {
     margin-bottom:20px;
 }
 
-.hokubu {
+.bo {
     display:flex;
     justify-content: space-around;
     align-items: center;
     font-size:30px;
     font-family:'Courier New', Courier, monospace;
-    background-color:#FF9900;
     width:600px;
     height:100px;
     border-radius:8px;
     box-shadow: 5px 5px 10px;
+    cursor: pointer;
 }
 
-.hokubu:hover {
-    cursor: pointer;
+.bo:active {
     box-shadow: 0 0 0;
-    transition: 0.5s;
+    transform: translateY(5px);
+}
+
+.hokubu {
+    background-color:#FF9900;
 }
 
 .hokubu-naka th {
@@ -219,22 +226,7 @@ header {
 
 .tyubu {
     margin-top:100px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size:30px;
-    font-family:'Courier New', Courier, monospace;
     background-color:#FF0099;
-    width:600px;
-    height:100px;
-    border-radius:8px;
-    box-shadow: 5px 5px 10px;
-}
-
-.tyubu:hover {
-    cursor: pointer;
-    box-shadow: 0 0 0;
-    transition: 0.5s;
 }
 
 .tyubu-naka th{
@@ -245,37 +237,22 @@ header {
     background-color:#FFCCFF;
 }
 
-.minami {
+.nanbu {
     margin-top:100px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size:30px;
-    font-family:'Courier New', Courier, monospace;
     background-color:#0099FF;
-    width:600px;
-    height:100px;
-    border-radius:8px;
-    box-shadow: 5px 5px 10px;
 }
 
-.minami:hover {
-    cursor: pointer;
-    box-shadow: 0 0 0;
-    transition: 0.5s;
-}
-
-.minami-naka th {
+.nanbu-naka th {
     background-color:#00FFFF;
 }
 
-.minami-naka td {
+.nanbu-naka td {
     background-color:#CCFFFF;
 }
 
 .hokubu-naka,
 .tyubu-naka,
-.minami-naka {
+.nanbu-naka {
     display:none;
 }
 
@@ -305,64 +282,35 @@ header {
     margin-top:30px;
 }
 
-.tatamu-h {
+.bo_ta {
     margin-top:40px;
     display:flex;
     justify-content: space-around;
     align-items: center;
     font-size:30px;
     font-family:'Courier New', Courier, monospace;
-    background-color:#FF9900;
     width:300px;
     height:70px;
     border-radius:8px;
     box-shadow: 3px 3px 7px;
+    cursor: pointer;
 }
 
-.tatamu-h:hover {
-    cursor: pointer;
+.bo_ta:active {
     box-shadow: 0 0 0;
-    transition: 0.5s;
+    transform: translateY(3px);
+}
+
+.tatamu-h {
+    background-color:#FF9900;
 }
 
 .tatamu-t {
-    margin-top:40px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size:30px;
-    font-family:'Courier New', Courier, monospace;
     background-color:#FF0099;
-    width:300px;
-    height:70px;
-    border-radius:8px;
-    box-shadow: 3px 3px 7px;
 }
 
-.tatamu-t:hover {
-    cursor: pointer;
-    box-shadow: 0 0 0;
-    transition: 0.5s;
-}
-
-.tatamu-m {
-    margin-top:40px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size:30px;
-    font-family:'Courier New', Courier, monospace;
+.tatamu-n {
     background-color:#0099FF;
-    width:300px;
-    height:70px;
-    border-radius:8px;
-    box-shadow: 3px 3px 7px;
-}
-
-.tatamu-m:hover {
-    cursor: pointer;
-    box-shadow: 0 0 0;
-    transition: 0.5s;
 }
 
 .tizu {
@@ -459,7 +407,7 @@ footer .list {
         width:80vw;
     }
 
-    .no {
+    .header-list {
         display:none;
     }
 
@@ -471,11 +419,9 @@ footer .list {
         padding-right:0;
     }
 
-    .hokubu,
-    .tyubu,
-    .minami {
+    .bo {
         width:100%;
-        height:60px;
+        height:70px;
         font-size:5.8vw;
         box-shadow: 3px 3px 7px;
     }
@@ -485,9 +431,7 @@ footer .list {
         margin-top:30px;
     }
 
-    .tatamu-h,
-    .tatamu-t,
-    .tatamu-m {
+    .bo_ta {
         width:80%;
         margin:40px auto 0 auto;
         font-size:5vw;
