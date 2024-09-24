@@ -3,7 +3,14 @@ $(function() {
     $('.han').click(function() {
         $(this).toggleClass('active');
         $('.no').slideToggle();
-    })
+    });
+
+    $(window).resize(function () {
+        if(window.matchMedia("(min-width:601px)").matches) {
+            $('.no').css('display','none');
+            $('.han').removeClass('active');
+        };
+    });
     
     $('.hokubu').click(function() {
         $('.hokubu-naka').slideToggle();
@@ -13,8 +20,8 @@ $(function() {
         $('.tyubu-naka').slideToggle();
     });
 
-    $('.minami').click(function() {
-        $('.minami-naka').slideToggle();
+    $('.nanbu').click(function() {
+        $('.nanbu-naka').slideToggle();
     });
 
     $('.tatamu-h').click(function() {
@@ -27,8 +34,8 @@ $(function() {
         $(window).scrollTop($('.tyubu').position().top);
     });
 
-    $('.tatamu-m').click(function() {
-        $('.minami-naka').slideUp();
-        $(window).scrollTop($('.minami').position().top);
+    $('.tatamu-n').click(function() {
+        $('.nanbu-naka').slideUp();
+        $(window).scrollTop($('.nanbu').position().top);
     });
-})
+});
